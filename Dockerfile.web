@@ -1,5 +1,6 @@
-ARG img_version
-FROM godot-fedora:${img_version}
+ARG img_version=4.8-f44
+ARG base_image=godot-fedora:${img_version}
+FROM ${base_image}
 
 ENV EMSCRIPTEN_VERSION=6.0.12
 
